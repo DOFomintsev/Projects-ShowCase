@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <meta name="theme-color" content="#090a0c">
+  <title>Проекты Дениса Фоминцева</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="showcase.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="identity" href="#top" aria-label="В начало витрины">
+      <span class="monogram" aria-hidden="true">ДФ</span>
+      <span>Денис Фоминцев<small>Витрина проектов</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Навигация по витрине">
+      <a href="#projects">Проекты</a>
+      <button class="show-button" id="present" type="button"><span aria-hidden="true">⛶</span> <span id="present-label">Режим показа</span></button>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="showcase" aria-label="Избранные проекты">
+      <div class="stage" id="stage">
+        <article class="scene scene--school active" id="scene-school">
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Образование</p>
+            <h1>Репетитор<br><em>Софии</em></h1>
+            <p class="lede">Помогает ребёнку понять школьную тему: поговорить с Верой, разобрать пример на доске и попробовать самому.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--lowcost" id="scene-lowcost" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Покупки</p>
+            <h1 aria-label="LowestCostBot">LowestCost<br><em>Bot</em></h1>
+            <p class="lede">Помогает выбрать технику и сравнить предложения магазинов в одном месте.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--family" id="scene-family" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Семья</p>
+            <h1 aria-label="Семейный архив «Фоминцевы»">Семейный<br><em>архив</em></h1>
+            <p class="lede">История семьи в одном месте: от родственных связей до фотографий и документов.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--content" id="scene-content" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Медиа</p>
+            <h1 aria-label="ContentZ">Content<br><em>Z</em></h1>
+            <p class="lede">Помогает превращать новости о технике в короткие ролики, Stories и публикации для LowestCostBot.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--safe" id="scene-safe" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Приватность</p>
+            <h1 aria-label="Сейф">Сейф</h1>
+            <p class="lede">Семейное хранилище документов, фотографий и паролей, которое можно открыть прямо на устройстве.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--balance" id="scene-balance" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Финансы</p>
+            <h1 aria-label="Баланс">Баланс</h1>
+            <p class="lede">Быстрая запись расходов, понятная аналитика и копилка для личных целей.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--farma" id="scene-farma" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Быт</p>
+            <h1 aria-label="Домашняя Фарма">Домашняя<br><em>Фарма</em></h1>
+            <p class="lede">Помогает найти нужное в домашней аптечке, следить за остатками и сроками годности.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--svoboda" id="scene-svoboda" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Привычки</p>
+            <h1 aria-label="Свобода">Свобода</h1>
+            <p class="lede">Поддержка на пути отказа от сигарет и алкоголя с личным журналом и отслеживанием прогресса.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--reels" id="scene-reels" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Видео</p>
+            <h1 aria-label="Alexandra Reels">Alexandra<br><em>Reels</em></h1>
+            <p class="lede">Превращает длинное видео или несколько коротких клипов в вертикальный ролик.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <article class="scene scene--ants" id="scene-ants" hidden>
+          <div class="scene-art" aria-hidden="true"></div>
+          <div class="scene-copy">
+            <p class="eyebrow"><span></span> Природа и наблюдение</p>
+            <h1>Муравьи<br><em>и AntCam</em></h1>
+            <p class="lede">Изучай муравьёв в интерактивной ферме и наблюдай за реальной колонией через камеру.</p>
+            <a class="details-link" href="#project-detail">Смотреть проект <span aria-hidden="true">↘</span></a>
+          </div>
+        </article>
+        <div class="scene-index" aria-live="polite"><span id="current-index">01</span><span class="index-line"></span><span>10</span></div>
+        <a class="gallery-link" href="#projects">Все проекты <span aria-hidden="true">↓</span></a>
+        <div class="stepper" aria-label="Листать проекты">
+          <button id="prev" type="button" aria-label="Предыдущий проект">←</button>
+          <button id="next" type="button" aria-label="Следующий проект">→</button>
+        </div>
+      </div>
+      <section class="filmstrip" id="projects" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Все проекты <span>10</span></h2>
+        <div class="tile-grid">
+          <button type="button" class="tile selected" data-slide="0" aria-pressed="true" aria-controls="scene-school">
+            <span class="tile-cover" style="--cover:url('assets/sofia-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Образование</small><strong>Репетитор Софии</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="1" aria-pressed="false" aria-controls="scene-lowcost">
+            <span class="tile-cover" style="--cover:url('assets/lowcost-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Покупки</small><strong>LowestCostBot</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="2" aria-pressed="false" aria-controls="scene-family">
+            <span class="tile-cover" style="--cover:url('assets/family-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Семья</small><strong>Семейный архив «Фоминцевы»</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="3" aria-pressed="false" aria-controls="scene-content">
+            <span class="tile-cover" style="--cover:url('assets/content-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Медиа</small><strong>ContentZ</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="4" aria-pressed="false" aria-controls="scene-safe">
+            <span class="tile-cover" style="--cover:url('assets/safe-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Приватность</small><strong>Сейф</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="5" aria-pressed="false" aria-controls="scene-balance">
+            <span class="tile-cover" style="--cover:url('assets/balance-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Финансы</small><strong>Баланс</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="6" aria-pressed="false" aria-controls="scene-farma">
+            <span class="tile-cover" style="--cover:url('assets/farma-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Быт</small><strong>Домашняя Фарма</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="7" aria-pressed="false" aria-controls="scene-svoboda">
+            <span class="tile-cover" style="--cover:url('assets/svoboda-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Привычки</small><strong>Свобода</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="8" aria-pressed="false" aria-controls="scene-reels">
+            <span class="tile-cover" style="--cover:url('assets/reels-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Видео</small><strong>Alexandra Reels</strong></span>
+          </button>
+          <button type="button" class="tile" data-slide="9" aria-pressed="false" aria-controls="scene-ants">
+            <span class="tile-cover" style="--cover:url('assets/ants-cover.jpg')" aria-hidden="true"></span>
+            <span class="tile-copy"><small>Природа</small><strong>Муравьи и AntCam</strong></span>
+          </button>
+        </div>
+      </section>
+    </section>
+    <section class="project-detail" id="project-detail" aria-label="Подробнее о проекте" tabindex="-1">
+      <article class="story story--school">
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Репетитор Софии</p>
+          <h2>От вопроса<br>к пониманию</h2>
+          <ul>
+            <li><strong>Урок голосом или текстом</strong><span>Можно рассказать Вере, что непонятно, или написать вопрос.</span></li>
+            <li><strong>Объяснение на доске</strong><span>Примеры, рисунки и схемы помогают разобрать тему по шагам.</span></li>
+            <li><strong>Практика после объяснения</strong><span>Ребёнок решает задания, а родитель может сохранить прогресс.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--phone">
+          <button type="button" data-image="assets/sofia-interface.png" data-caption="Репетитор Софии · задание на доске" aria-label="Увеличить кадр урока">
+            <img src="assets/sofia-interface.png" alt="Меловая доска с заданием на вычитание яблок" width="382" height="645">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Задание на доске</figcaption>
+        </figure>
+      </article>
+      <article class="story scene--lowcost" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> LowestCostBot</p>
+          <h2>Выбрать технику<br>с открытыми глазами</h2>
+          <ul>
+            <li><strong>Подбор по параметрам</strong><span>Найди подходящие модели по нужным характеристикам и рейтингу.</span></li>
+            <li><strong>Сравнение цен</strong><span>Посмотри предложения разных магазинов для одной модели.</span></li>
+            <li><strong>Избранное и уведомления</strong><span>Сохрани интересные варианты и следи за изменениями цены.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--wide">
+          <button type="button" data-image="assets/content-example.jpg" data-caption="Брендовая обложка LowestCostBot" aria-label="Увеличить изображение проекта">
+            <img src="assets/content-example.jpg" alt="Брендовая обложка LowestCostBot" loading="lazy" decoding="async">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Брендовая обложка LowestCostBot</figcaption>
+        </figure>
+      </article>
+      <article class="story scene--family" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Семейный архив «Фоминцевы»</p>
+          <h2>Истории семьи<br>рядом</h2>
+          <ul>
+            <li><strong>Интерактивное древо</strong><span>Исследуй родственные связи и переходи между поколениями.</span></li>
+            <li><strong>Фото и документы</strong><span>Храни семейные материалы рядом с биографиями.</span></li>
+            <li><strong>Хронология и карта</strong><span>Проследи, где и когда происходили важные события.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--wide">
+          <button type="button" data-image="assets/family-cover.jpg" data-caption="Иллюстрация семейного архива" aria-label="Увеличить изображение проекта">
+            <img src="assets/family-cover.jpg" alt="Иллюстрация семейного архива" loading="lazy" decoding="async">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Иллюстрация семейного архива</figcaption>
+        </figure>
+      </article>
+      <article class="story scene--content" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> ContentZ</p>
+          <h2>От инфоповода<br>до публикации</h2>
+          <ul>
+            <li><strong>Отбор тем</strong><span>Собирает и проверяет инфоповоды для будущих выпусков.</span></li>
+            <li><strong>Ролики и Stories</strong><span>Из темы получаются сценарий, иллюстрации и короткий вертикальный ролик.</span></li>
+            <li><strong>Очередь публикаций</strong><span>Помогает собрать материалы на неделю и следить за их выходом.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--phone">
+          <button type="button" data-image="assets/content-story.jpg" data-caption="Пример вертикальной Stories от ContentZ" aria-label="Увеличить изображение проекта">
+            <img src="assets/content-story.jpg" alt="Пример вертикальной Stories от ContentZ" loading="lazy" decoding="async">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Пример вертикальной Stories от ContentZ</figcaption>
+        </figure>
+      </article>
+      <article class="story scene--safe" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Сейф</p>
+          <h2>Личное<br>под защитой</h2>
+          <ul>
+            <li><strong>Документы, фото и пароли</strong><span>Собери важные записи и вложения в одном месте.</span></li>
+            <li><strong>Доступ после разблокировки</strong><span>Содержимое хранится в зашифрованном виде.</span></li>
+            <li><strong>Резервная копия</strong><span>Сохрани зашифрованную копию отдельно и восстанови её при необходимости.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--wide">
+          <button type="button" data-image="assets/safe-cover.jpg" data-caption="Иллюстрация личного сейфа" aria-label="Увеличить изображение проекта">
+            <img src="assets/safe-cover.jpg" alt="Иллюстрация личного сейфа" loading="lazy" decoding="async">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Иллюстрация личного сейфа</figcaption>
+        </figure>
+      </article>
+      <article class="story scene--balance" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Баланс</p>
+          <h2>Куда уходят<br>деньги</h2>
+          <ul>
+            <li><strong>Расходы по категориям</strong><span>Запиши сумму и быстро найди покупку в истории.</span></li>
+            <li><strong>Аналитика</strong><span>Посмотри, как меняются расходы по дням и категориям.</span></li>
+            <li><strong>Копилка и напоминания</strong><span>Отслеживай накопления и держи регулярные платежи в поле зрения.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--phone">
+          <button type="button" data-image="assets/balance-interface.png" data-caption="Аналитика с демонстрационными суммами" aria-label="Увеличить изображение проекта">
+            <img src="assets/balance-interface.png" alt="Аналитика с демонстрационными суммами" loading="lazy" decoding="async">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Аналитика с демонстрационными суммами</figcaption>
+        </figure>
+      </article>
+      <article class="story scene--farma" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Домашняя Фарма</p>
+          <h2>Аптечка<br>под рукой</h2>
+          <ul>
+            <li><strong>Поиск по аптечке</strong><span>Узнай, где лежит нужное средство и сколько его осталось.</span></li>
+            <li><strong>Сроки и партии</strong><span>Проверяй сроки годности по отдельным упаковкам.</span></li>
+            <li><strong>Личные наборы</strong><span>Собирай повторяющиеся наборы и отмечай приём.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--phone">
+          <button type="button" data-image="assets/farma-interface.png" data-caption="Экран подключения домашней аптечки" aria-label="Увеличить изображение проекта">
+            <img src="assets/farma-interface.png" alt="Экран подключения домашней аптечки" loading="lazy" decoding="async">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Экран подключения домашней аптечки</figcaption>
+        </figure>
+      </article>
+      <article class="story scene--svoboda" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Свобода</p>
+          <h2>Замечать<br>свой прогресс</h2>
+          <ul>
+            <li><strong>Два счётчика</strong><span>Отдельный отсчёт времени без сигарет и алкоголя.</span></li>
+            <li><strong>Журнал и экономия</strong><span>Отмечай эпизоды и смотри, сколько денег удалось сохранить.</span></li>
+            <li><strong>Качество жизни</strong><span>Отмечай сон, энергию и ясность и наблюдай за изменениями.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--phone">
+          <button type="button" data-image="assets/svoboda-interface.png" data-caption="Прототип экрана с вымышленными данными" aria-label="Увеличить изображение проекта">
+            <img src="assets/svoboda-interface.png" alt="Прототип экрана с вымышленными данными" loading="lazy" decoding="async">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Прототип экрана с вымышленными данными</figcaption>
+        </figure>
+      </article>
+      <article class="story scene--reels" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Alexandra Reels</p>
+          <h2>Из исходников<br>в готовый Reel</h2>
+          <ul>
+            <li><strong>Из одного видео или серии клипов</strong><span>Добавь материал и расставь клипы в нужном порядке.</span></li>
+            <li><strong>Акцент на действии или речи</strong><span>Выбери, какие моменты должны попасть в монтаж в первую очередь.</span></li>
+            <li><strong>Просмотр и варианты</strong><span>Оцени результат, скачай его или пересобери с другим акцентом.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--wide">
+          <button type="button" data-image="assets/reels-cover.jpg" data-caption="Иллюстрация процесса монтажа" aria-label="Увеличить изображение проекта">
+            <img src="assets/reels-cover.jpg" alt="Иллюстрация процесса монтажа" loading="lazy" decoding="async">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Иллюстрация процесса монтажа</figcaption>
+        </figure>
+      </article>
+      <article class="story story--ants" hidden>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Муравьи и AntCam</p>
+          <h2>Жизнь колонии<br>в деталях</h2>
+          <ul>
+            <li><strong>Живая 3D-ферма</strong><span>Рассмотри ходы, найди матку и проследи за отдельным муравьём.</span></li>
+            <li><strong>Энциклопедия</strong><span>Узнай о видах муравьёв и о том, как устроена жизнь колонии.</span></li>
+            <li><strong>Камера в ферме «Космос»</strong><span>Когда эфир включён, можно наблюдать за настоящей колонией.</span></li>
+          </ul>
+        </div>
+        <figure class="media media--wide">
+          <button type="button" data-image="assets/ants-interface.jpg" data-caption="Муравьи и AntCam · интерактивная ферма" aria-label="Увеличить кадр 3D-фермы">
+            <img src="assets/ants-interface.jpg" alt="Интерфейс сайта с трёхмерной моделью муравьиной фермы" width="1272" height="716">
+            <span class="zoom" aria-hidden="true">↗</span>
+          </button>
+          <figcaption>Интерактивная 3D-ферма</figcaption>
+        </figure>
+      </article>
+    </section>
+  </main>
+  <footer><a href="#top">К началу <span aria-hidden="true">↑</span></a></footer>
+  <dialog id="image-dialog" aria-labelledby="image-caption">
+    <button id="close-image" type="button" aria-label="Закрыть изображение">×</button>
+    <img id="expanded-image" alt="">
+    <p id="image-caption"></p>
+  </dialog>
+</body>
+</html>
